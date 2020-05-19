@@ -15,4 +15,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>lint-app-releases</id>
+      <name>lint-app-releases</name>
+      <url>http://ec2-3-15-168-65.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/lint-app-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>lint-app-snapshots</id>
+      <name>lint-app-snapshots</name>
+      <url>http://ec2-3-15-168-65.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/lint-app-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
