@@ -1,7 +1,7 @@
 node('maven-label') {
    def mvnHome
    stage('Preparation') { 
-      git 'https://github.com/kelly-lint/lint-app.git'         
+      git branch: '${BRANCH_NAME}', url: 'https://github.com/kelly-lint/lint-app.git'         
       mvnHome = tool 'maven-3.6.3'
    }
    stage('Build') {
